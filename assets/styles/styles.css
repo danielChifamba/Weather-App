@@ -1,0 +1,122 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.creator {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 1rem;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.container {
+    display: block;
+    align-items: center;
+    padding: 20px;
+    min-width: 380px;
+    border: 1px solid var(--color-white);
+    border-radius: 10px;
+    background-color: rgba(80, 99, 223, 0.759);
+}
+
+.container .search {
+    display: block;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    border: 1px solid var(--color-white);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 1.2rem;
+}
+
+.search-btn {
+    cursor: pointer;
+}
+
+.container .search input {
+    color: var(--color-white);
+    font-size: 1.3rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding-left: 5px;
+    width: 90%;
+}
+
+::placeholder{
+    color: var(--color-white);
+    text-transform: none;
+}
+
+.middle {
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+
+.middle img {
+    margin: auto;
+}
+
+.middle h2, .middle h3 {
+    color: var(--color-white);
+}
+
+.middle sup {
+    font-size: 1.2rem;
+}
+
+.weather {
+    display: none;
+}
+
+.middle .more-info {
+    font-size: 1.2rem;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bottom svg {
+    width: 2.5rem;
+}
+
+.bottom .humidity-info,
+.bottom .wind-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.bottom .humidity-info .info,
+.bottom .wind-info .info {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+.error {
+    display: none;
+    text-align: left;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.error p {
+    color: var(--color-red);
+}

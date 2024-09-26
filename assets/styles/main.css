@@ -1,0 +1,202 @@
+/*************** Poppins Regular *************/
+@font-face {
+    font-family: "Poppins-regular";
+    src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+/*************** Poppins Bold *************/
+@font-face {
+    font-family: "Poppins-bold";
+    src: url(../fonts/Poppins-Bold.ttf) format("truetype");
+}
+
+/*************** Poppins Medium *************/
+@font-face {
+    font-family: "Poppins-medium";
+    src: url(../fonts/Poppins-Medium.ttf) format("truetype");
+}
+
+/***************** Default variables ****************/
+:root {
+    /***************** Colors ***************/
+    --color-blue: #0d6efd;
+    --color-indigo: #6610f2;
+    --color-purple: #6f42c1;
+    --color-pink: #d63384;
+    --color-red: #e62323;
+    --color-orange: #fd7e14;
+    --color-yellow: #ffc107;
+    --color-green: #198754;
+    --color-teal: #20c997;
+    --color-cyan: #0dcaf0;
+    --color-black: #000;
+    --color-white: #f2f7fd;
+    --color-gray: #6c757d;
+
+    --text-color: #717275;
+    /**************** Button Colors ****************/
+    --btn-primary-color: #0d6efd;
+    --btn-secondary-color: #6c757d;
+    --btn-success-color: #198754;
+    --btn-info-color: #0dcaf0;
+    --btn-warning-color: #ffc107;
+    --btn-danger-color: #dc3545;
+    --btn-light-color: #f8f9fa;
+    --btn-dark-color: #212529;
+    /*************** Font Info *********************/
+    --poppins-regular: "Poppins-regular";
+    --poppins-medium: "Poppins-medium";
+    --poppins-bold: "Poppins-bold";
+
+    --font-weight-thin: 100;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    --default-font-size: 1rem;
+    --default-line-height: 1.5;
+
+    --cool-dark-color: #202346;
+    --text-muted-color: var(--color-gray);
+    --border-radius: 0.375rem;
+    --border-radius-small: 0.25rem;
+    --border-radius-large: 0.5rem;
+}
+
+
+/***************** Default values *****************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+    outline: 0;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--poppins-regular);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--default-line-height);
+    color: var(--color-black);
+    background-color: var(--cool-dark-color);
+}
+
+h6,
+h5,
+h4,
+h3,
+h2 {
+    line-height: inherit;
+    color: var(--color-black);
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+    font-weight: var(--font-weight-bold);
+}
+
+h1 {
+  font-size: 64px;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: var(--font-weight-light);
+}
+
+a {
+    touch-action: manipulation;
+    transition: all 0.3s;
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--color-blue);
+}
+
+a svg {
+    fill: var(--text-color);
+}
+
+a svg:hover {
+    fill: var(--color-blue);
+}
+
+svg {
+    vertical-align: middle;
+    max-width: 100%;
+    fill: var(--color-white);
+    width: 1.3rem;
+    height: auto;
+}
+
+.icon {
+  border-radius: 0;
+  overflow: visible;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  display: inline-block;
+  fill: currentcolor;
+  line-height: 0;
+  transform: translate(0, 0);
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%;}

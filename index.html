@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Daniel Chifamba">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Weather - Chifamba Creations</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/icons/weather-icon.ico">
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
+</head>
+
+<body>
+
+    <div class="creator">
+        Created by Daniel Chifamba
+    </div>
+
+    <div class="container">
+        <div class="search">
+            <input type="text" placeholder="Search here" class="city">
+            <div class="icon magnifying-glass search-btn"></div>
+        </div>
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+        <div class="weather">
+            <div class="middle">
+                <img src="assets/images/cloud.png" class="weather-icon">
+                <h2 class="temp"></h2>
+                <h3 class="more-info"></h3>
+            </div>
+            <div class="bottom">
+                <div class="humidity-info">
+                    <div class="icon water"></div>
+                    <div class="info">
+                        <span class="humidity-percent"></span>
+                        <span class="title">Humidity</span>
+                    </div>
+                </div>
+                <div class="wind-info">
+                    <div class="icon wind"></div>
+                    <div class="info">
+                        <span class="wind-speed"></span>
+                        <span class="title">Wind Speed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/icons.js" type="text/javascript"></script>
+
+</body>
+
+</html>
